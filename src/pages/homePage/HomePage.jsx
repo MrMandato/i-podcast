@@ -1,5 +1,8 @@
 export const HomePage = () => {
   return (
-    <div className="homepage">HomePage</div>
+    <main className="i-podcast__homepage">
+
+
+    </main>
   )
 }

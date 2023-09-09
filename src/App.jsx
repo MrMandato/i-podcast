@@ -1,9 +1,13 @@
 import { Router } from "./router"
+import { Header } from './components/header'
 
 function App() {
 
   return (
-    <Router />
+    <div className="i-podcast">
+      <Header />
+      <Router />
+    </div>
   )
 }
 

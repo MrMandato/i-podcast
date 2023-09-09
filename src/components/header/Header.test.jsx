@@ -1,12 +1,12 @@
 import { element, initializeReactContainer, render } from "../../../test/reactTestUtils";
-import { HomePage } from './HomePage'
+import { Header } from './Header'
 describe('homePage', () => {
   beforeEach(() => {
     initializeReactContainer()
   })
 
   test('should render', () => {
-    render(<HomePage />)
-    expect(element('.i-podcast__homepage')).toBeTruthy()
+    render(<Header />)
+    expect(element('.i-podcast__header')).toBeTruthy()
   })
 })
