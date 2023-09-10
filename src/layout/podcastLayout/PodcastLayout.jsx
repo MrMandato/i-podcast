@@ -1,7 +1,13 @@
-
+import { EpisodesList } from '../../components/episodesList'
+import { useLoaderData } from 'react-router-dom'
 
 export const PodcastLayout = () => {
+  const episodesElements = useLoaderData()
+
   return (
-    <div className='podcast'>PodcastLayout.</div>
+    <section >
+      <EpisodesList episodesElements={episodesElements} />
+    </section>
+
   )
 }

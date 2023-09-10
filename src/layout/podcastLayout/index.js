@@ -1,1 +1,1 @@
-export { PodcastLayout } from './PodcastLayout'
+export { PodcastLayout } from './podcastLayout'

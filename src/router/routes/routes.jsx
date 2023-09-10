@@ -2,7 +2,7 @@ import { HomePage } from '../../pages/homePage'
 import { PodcastPage } from '../../pages/podcastPage/PodcastPage'
 import { PodcastLayout } from '../../layout/podcastLayout'
 import { EpisodeLayout } from '../../layout/episodeLayout'
-import { homeLoader } from '../loaders'
+import { homeLoader, podcastLoader } from '../loaders'
 
 export const homeRoute = {
   path: '/',
@@ -17,7 +17,8 @@ const podcastRoute = {
   children: [
     {
       path: '',
-      element: <PodcastLayout />
+      element: <PodcastLayout />,
+      loader: podcastLoader
     },
     {
       path: 'episode/:episodeId',

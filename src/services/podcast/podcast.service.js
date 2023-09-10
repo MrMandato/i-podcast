@@ -1,3 +1,6 @@
+import { podcastListKey } from "../../constants/keys"
+import { getLocalStorage, isEmptyArray } from "../../utils/commons"
+
 export const getPodcasts = async () => {
   const applePodcastURL = 'https://itunes.apple.com/us/rss/toppodcasts/limit=100/genre=1310/json'
 
@@ -23,5 +26,28 @@ export const getEpisodes = async (podcastId) => {
   } catch (error) {
     console.error('Error getting episodes:', error)
     return []
+  }
+}
+export const getPodcastFromLocalStorage = () => getLocalStorage(podcastListKey)?.data
+export const getPodcastsInfo = (id) => {
+  const podcasts = getPodcastFromLocalStorage()
+  const emptyPodcast = {
+    image: '',
+    artist: '',
+    title: '',
+    summary: ''
+  }
+
+  if (isEmptyArray(podcasts)) return emptyPodcast
+  console.log(podcasts)
+  const podcast = podcasts.find(podcasts => podcasts.id.attributes['im:id'] === id)
+  const {
+    'im:image': [, , { label: image }],
+    'im:name': { label: title },
+    'im:artist': { label: artist },
+    summary: { label }
+  } = podcast
+  return {
+    image, artist, title, summary: label
   }
 }
