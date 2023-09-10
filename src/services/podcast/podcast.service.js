@@ -1,7 +1,6 @@
 export const getPodcasts = async () => {
-  const applePodcastURL = import.meta.env.VITE_APPLE_PODCAST_URL
-
   try {
+    const applePodcastURL = import.meta.env.VITE_APPLE_PODCAST_URL
     const result = await fetch(applePodcastURL)
     const response = await result.json()
     const podcastElements = response.feed.entry
