@@ -40,7 +40,7 @@ PodcastItem.propTypes = {
   'im:artist': PropTypes.shape({
     label: PropTypes.string.isRequired
   }).isRequired,
-  summary: PropTypes.object.isRequired,
+  summary: PropTypes.string.isRequired,
   id: PropTypes.shape({
     attributes: PropTypes.shape({
       'im:id': PropTypes.string.isRequired

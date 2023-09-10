@@ -35,19 +35,22 @@ export const getPodcastsInfo = (id) => {
     image: '',
     artist: '',
     title: '',
-    summary: ''
+    summary: '',
+    id: ''
   }
-
   if (isEmptyArray(podcasts)) return emptyPodcast
-  console.log(podcasts)
-  const podcast = podcasts.find(podcasts => podcasts.id.attributes['im:id'] === id)
+
+  const podcast = podcasts?.find(podcasts => podcasts.id.attributes['im:id'] === id)
+
   const {
     'im:image': [, , { label: image }],
     'im:name': { label: title },
     'im:artist': { label: artist },
-    summary: { label }
+    summary: { label },
+    id: { attributes: { 'im:id': podcastId } }
   } = podcast
+
   return {
-    image, artist, title, summary: label
+    image, artist, title, summary: label, id: podcastId
   }
 }
