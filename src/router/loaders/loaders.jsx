@@ -21,8 +21,13 @@ export const homeLoader = async () => {
 
 export const podcastLoader = async ({ params }) => {
   try {
+    removeItemAferXtime(`PODCAST-DETAIL-${params.podcastId}`, removeLocalStorageTime)
+    const dataFromStorage = getLocalStorage(`PODCAST-DETAIL-${params.podcastId}`)
+    if (dataFromStorage) return dataFromStorage?.data
+
     const episodesInfo = await getEpisodes(params.podcastId)
-    return episodesInfo
+    setLocalStorage(`PODCAST-DETAIL-${params.podcastId}`, dataWithTimestamp(episodesInfo))
+
   } catch (error) {
     console.error('Error in podcast loader:', error)
     return []
