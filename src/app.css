@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+:root {
+  --blackout: #000000;
+  --submarine: #256ec5;
+  --berry-fancy: #813772;
+  --amber: #b82601;
+  --amber-reduce: tomato;
+  --amber-neutro: orange;
+  --reduced-gray: #C4C4C4;
+  --gray-one-level: #F7F7F7;
+  --dark-gray: #3C3F41;
+  /* #5c5656 */
+  --base-size: 1rem;
+  --scale: 1.25;
+  --h5: calc((var(--base-size) * (var(--scale))));
+  --h4: calc((var(--h5) * (var(--scale))));
+  --h3: calc((var(--h4) * (var(--scale))));
+  --h2: calc((var(--h3) * (var(--scale))));
+  --h1: calc((var(--h2) * (var(--scale))));
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.colors {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: right;
+  z-index: 1;
+}
+
+.colors>div {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  color: transparent;
+}
+
+.blackout {
+  background-color: var(--blackout);
+}
+
+.submarine {
+  background-color: var(--submarine);
+}
+
+.berry-fancy {
+  background-color: var(--berry-fancy);
+}
+
+.amber {
+  background-color: var(--amber);
+}
+
+.amber-reduce {
+  background-color: var(--amber-reduce);
+}
+
+.amber-neutro {
+  background-color: var(--amber-neutro);
+}
+
+.reduced-gray {
+  background-color: var(--reduced-gray);
+}
+
+.dark-gray {
+  background-color: var(--dark-gray);
+}
+
+html {
+  font-size: 100%;
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  font-size: var(--base-size);
+  background-color: var(--gray-one-level);
+  height: 100vh;
+  margin: .5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+.h1 {
+  font-size: var(--h1);
+}
+
+h2,
+.h2 {
+  font-size: var(--h2);
+}
+
+h3,
+.h3 {
+  font-size: var(--h3);
+}
+
+h4,
+.h4 {
+  font-size: var(h4);
+}
+
+h5,
+.h5 {
+  font-size: var(--h5);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: 'Roboto';
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+
+@keyframes element-grow-inside {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

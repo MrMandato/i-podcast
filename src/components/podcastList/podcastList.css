@@ -1,0 +1,24 @@
+.podcast-list {
+  padding-top: 7rem;
+}
+
+.podcast-list>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (min-width:585px) {
+  .podcast-list>ul {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem 2rem;
+    justify-content: space-between;
+    margin-top: 4rem;
+  }
+
+  .podcast-list .podcast-item {
+    height: 17rem;
+    width: 13rem;
+  }
+}

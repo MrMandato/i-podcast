@@ -1,0 +1,22 @@
+.search-field {
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+  margin: 3rem;
+  position: fixed;
+  right: 0;
+}
+
+.search-field__form__label {
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 0.4rem;
+  background-color: #FFA500;
+  border-radius: .5rem;
+}
+
+.search-field__form__input {
+  height: 2rem;
+  padding: .5rem;
+  border-radius: .5rem;
+}

@@ -13,7 +13,7 @@ export const HomePage = () => {
 
   return (
     <main className="i-podcast__homepage">
-      <SearchField placeholder={'Filter podcasts...'} label={'100'} value={value} onChange={onChange} />
+      <SearchField placeholder={'Filter podcasts...'} label={podcastFilter?.length} value={value} onChange={onChange} />
       <PodcastList podcastElements={podcastFilter} />
     </main>
   )

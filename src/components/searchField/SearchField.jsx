@@ -1,5 +1,6 @@
 
 import PropTypes from 'prop-types'
+import './searchField.css'
 
 export const SearchField = ({ label, placeholder, value, onChange }) => {
   return (

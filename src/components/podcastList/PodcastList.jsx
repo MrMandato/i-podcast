@@ -4,6 +4,8 @@ import { EmptyStateList } from '../../components/emptyStateList'
 import { PodcastItem } from '../podcastItem'
 import PropTypes from 'prop-types'
 
+import './podcastList.css'
+
 export const PodcastList = ({ podcastElements = [] }) => {
   const getId = useCallback(
     (element) => element.id.attributes['im:id'],

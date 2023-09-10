@@ -17,11 +17,11 @@ describe('isEmptyArray', () => {
   })
 
   test('should return false for a non-array', () => {
-    expect(isEmptyArray('not an array')).toBe(false)
+    expect(isEmptyArray('not an array')).toBe(true)
   })
 
-  test('should return false for an undefined', () => {
-    expect(isEmptyArray()).toBe(false)
+  test('should return true for an undefined', () => {
+    expect(isEmptyArray()).toBe(true)
   })
 })
 

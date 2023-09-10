@@ -2,7 +2,7 @@ import { memo } from 'react'
 import PropTypes from 'prop-types'
 import { useNavigate } from 'react-router-dom'
 import { usePodcast } from '../../hooks/usePodcast'
-
+import './podcastItem.css'
 
 export const PodcastItem = memo(({
   'im:image': [, , { label: image }],
@@ -21,7 +21,7 @@ export const PodcastItem = memo(({
   }
   return (
     <button className='podcast-item' onClick={handlerOnclick} >
-      <div>
+      <div className='podcast-item__container'>
         <img className='podcast-item__avatar' src={image} alt={title} />
         <p className='podcast-item__title'>{title}</p>
         <p className='podcast-item__artist'>{artist}</p>

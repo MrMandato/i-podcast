@@ -1,0 +1,58 @@
+.podcast-item {
+  background-color: white;
+  border-radius: .5rem;
+  box-shadow: 0 0 8px var(--reduced-gray);
+  position: relative;
+  border: 0;
+  cursor: pointer;
+  animation-name: element-grow-inside;
+  animation-duration: .3s;
+}
+
+.podcast-item__container {
+  position: relative;
+  bottom: 2rem;
+}
+
+.podcast-item__avatar {
+  max-width: 100%;
+  border-radius: 100%;
+  position: relative;
+  box-shadow: 0 0 8px 6px #C4C4C4;
+}
+
+.podcast-item:hover .podcast-item__avatar {
+  border: .15rem solid orange;
+}
+
+.podcast-item__title {
+  font-weight: bold;
+}
+
+.podcast-item__artist {
+  font-weight: lighter;
+  color: var(--dark-gray);
+}
+
+.podcast-item__artist::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: transparent;
+  transition: transform 0.2s ease-out;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 4px;
+  transform: scale(0);
+  transform-origin: left;
+}
+
+.podcast-item:hover .podcast-item__artist::before {
+  content: '';
+  position: absolute;
+  transform: scale(1);
+  background-color: orange;
+
+}

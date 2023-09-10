@@ -1,0 +1,18 @@
+.i-podcast__header {
+  background-color: #2F8DFC;
+  color: #FFFFFF;
+  font-weight: 400;
+  padding: 1rem;
+  border-radius: .7rem;
+  width: -webkit-fill-available;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: .5rem;
+  margin: .5rem;
+}
+
+.i-podcast__header>h1 {
+  font-family: 'Sofia', 'Roboto';
+  text-align: center;
+}
