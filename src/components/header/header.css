@@ -10,6 +10,7 @@
   top: 0;
   padding: .5rem;
   margin: .5rem;
+  z-index: 1;
 }
 
 .i-podcast__header>h1 {

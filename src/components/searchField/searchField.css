@@ -5,6 +5,7 @@
   margin: 3rem;
   position: fixed;
   right: 0;
+  z-index: 1;
 }
 
 .search-field__form__label {
