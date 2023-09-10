@@ -1,10 +1,21 @@
 # i-podcast
 
+demo: https://prueba-tecnica-inditex.netlify.app/
+
 Esta es una mini-aplicación para escuchar podcasts musicales. La aplicación consta de tres vistas principales:
 
-1. Vista principal: muestra una lista de podcasts
-2. Detalles de un podcast: muestra información detallada sobre un podcast seleccionado de la lista principal
-3. Detalles de un capítulo de un podcast: muestra información detallada sobre un capítulo seleccionado de un podcast
+1. Vista principal
+2. Detalles de un podcast
+3. Detalles de un capítulo de un podcast
+
+Pone en practica algunos principios:
+
+List / item (container component/ presentation component)
+fetch / localStorage (manejo del estado del servidor)
+manejo de estados (react context)
+form (controlados)
+enrutado (React-router)
+jest (test - jsdom)
 
 ## Instalación
 
@@ -22,14 +33,11 @@ Ejecute `npm run dev` para iniciar el servidor de desarrollo.
 1. Ejecute `npm run build` para compilar y generar los archivos para producción.
 2. Ejecute `npm run preview` para iniciar un servidor de producción.
 3. Se genera el directorio dist, el cual corresponde al distribuible 
-4. Publique el distribuible en el proveedor de preferencia ejemplo netlify para obtener un resultado similar al siguiente:
 
-https://app.netlify.com/sites/prueba-tecnica-inditex/configuration/general
+
 
 ## Dependencias
 
-- [@babel/runtime](https://www.npmjs.com/package/@babel/runtime): ^7.22.15
-- [@testing-library/react-hooks](https://www.npmjs.com/package/@testing-library/react-hooks): ^8.0.1
 - [react](https://www.npmjs.com/package/react): ^18.2.0
 - [react-dom](https://www.npmjs.com/package/react-dom): ^18.2.0
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom): 6.15.0
