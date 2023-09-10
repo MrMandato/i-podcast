@@ -12,6 +12,7 @@ export const SearchField = ({ label, placeholder, value, onChange }) => {
           {label}
         </label>
         <input
+          autoComplete='off'
           className='search-field__form__input'
           type="text"
           id="search"
