@@ -1,5 +1,5 @@
 import { createContext } from "react"
-const initialState = {
+/* const initialState = {
   isLoading: true
-}
-export const uiStateContext = createContext(initialState)
+} */
+export const uiStateContext = createContext()
