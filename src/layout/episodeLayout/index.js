@@ -1,1 +1,1 @@
-export { EpisodeLayout } from './EpisodeLayout'
+export { EpisodeLayout } from './episodeLayout'
