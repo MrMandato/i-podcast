@@ -2,7 +2,12 @@ import PropTypes from 'prop-types'
 import { isEmptyArray, generateId } from '../../utils/commons'
 
 
-export const List = ({ elements = [], ItemComponent, EmptyStateComponent, getId = generateId }) => {
+export const List = ({
+  elements = [],
+  ItemComponent,
+  EmptyStateComponent,
+  getId = generateId
+}) => {
   if (isEmptyArray(elements) || !ItemComponent) {
     return (
       <>

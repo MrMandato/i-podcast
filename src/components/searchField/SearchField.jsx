@@ -3,15 +3,15 @@ import PropTypes from 'prop-types'
 
 export const SearchField = ({ label, placeholder, value, onChange }) => {
   return (
-    <div className='homepage'>
-      <form className='homepage__form'>
+    <div className='search-field'>
+      <form className='search-field__form'>
         <label
-          className='homepage__form__label'
+          className='search-field__form__label'
           htmlFor="search">
           {label}
         </label>
         <input
-          className='homepage__form__input'
+          className='search-field__form__input'
           type="text"
           id="search"
           name="search"

@@ -1,13 +1,16 @@
 import { Router } from "./router"
 import { Header } from './components/header'
+import { PodcastProvider } from "./contexts/podcast"
 
 function App() {
 
   return (
-    <div className="i-podcast">
-      <Header />
-      <Router />
-    </div>
+    <PodcastProvider>
+      <div className="i-podcast">
+        <Header />
+        <Router />
+      </div>
+    </PodcastProvider>
   )
 }
 

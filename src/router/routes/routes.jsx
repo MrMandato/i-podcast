@@ -2,10 +2,13 @@ import { HomePage } from '../../pages/homePage'
 import { PodcastPage } from '../../pages/podcastPage/PodcastPage'
 import { PodcastLayout } from '../../layout/podcastLayout'
 import { EpisodeLayout } from '../../layout/episodeLayout'
+import { homeLoader } from '../loaders'
 
-const homeRoute = {
+export const homeRoute = {
   path: '/',
-  element: <HomePage />
+  element: <HomePage />,
+  loader: homeLoader
+
 }
 
 const podcastRoute = {
