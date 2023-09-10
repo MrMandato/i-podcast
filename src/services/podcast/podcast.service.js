@@ -1,5 +1,5 @@
 export const getPodcasts = async () => {
-  const applePodcastURL = 'https://itunes.apple.com/us/rss/toppodcasts/limit=100/genre=1310/json'
+  const applePodcastURL = import.meta.env.VITE_APPLE_PODCAST_URL
 
   try {
     const result = await fetch(applePodcastURL)
@@ -13,7 +13,7 @@ export const getPodcasts = async () => {
 }
 
 export const getEpisodes = async (podcastId) => {
-  const podcastURL = `https://itunes.apple.com/lookup?id=${podcastId}&media=podcast&entity=podcastEpisode&limit=20`
+  const podcastURL = `${import.meta.env.VITE_APPLE_PODCAST_EPISODES_URL_PRE}${podcastId}${import.meta.env.VITE_APPLE_PODCAST_EPISODES_URL_POST}`
 
   try {
     const result = await fetch(podcastURL)
