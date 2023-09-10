@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 
 :root {
@@ -81,7 +81,6 @@ html {
 
 html {
   font-size: 100%;
-
 }
 
 body {
@@ -159,6 +158,13 @@ h5 {
 small,
 .text_small {
   font-size: 0.8rem;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 0 8px #C4C4C4;
 }
 
 

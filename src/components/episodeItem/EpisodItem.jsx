@@ -2,7 +2,7 @@ import { memo } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { getTrackFormat, getDateFormat, getDuration } from '../../utils/episode'
-
+import './episodeItem.css'
 
 export const EpisodeItem = memo(({
   trackName,

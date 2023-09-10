@@ -1,0 +1,23 @@
+.episode-card {
+  padding: 2rem;
+}
+
+.episode-card__title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: .3rem;
+}
+
+.episode-card__description {
+  font-size: 14px;
+  color: #666666;
+}
+
+.episode-card__audio {
+  margin-top: 10px;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+  width: 80%;
+
+}

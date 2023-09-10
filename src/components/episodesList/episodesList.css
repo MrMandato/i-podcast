@@ -1,0 +1,50 @@
+@media (min-width: 585px) {
+
+  .episodes .episode-item,
+  .episodes__header {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+
+  }
+
+  .episodes__counter {
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 0.4rem;
+    background-color: #FFA500;
+    border-radius: 0.5rem;
+    width: fit-content;
+  }
+
+  .episodes {
+    text-align: left;
+  }
+
+  .episodes ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    font-size: small;
+  }
+
+  .episodes__header--title,
+  .episodes__header--date,
+  .episodes__header--duration {
+    border-right: .2rem solid var(--dark-gray);
+    margin-right: .4rem;
+  }
+
+  .episodes a {
+    color: var(--dark-gray);
+    text-decoration: none;
+  }
+
+  .episodes__header {
+    text-align: left;
+    background-color: var(--reduced-gray);
+    border-radius: 8px;
+    padding: .3rem;
+    margin-top: 1rem;
+    box-shadow: 0 0 8px #C4C4C4;
+  }
+}

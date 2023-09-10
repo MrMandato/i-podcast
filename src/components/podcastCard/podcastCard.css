@@ -1,0 +1,31 @@
+.podcast-card {
+  margin-left: 2rem;
+}
+
+.podcast-card__avatar {
+  max-width: 100%;
+  height: auto;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+}
+
+.podcast-card__title {
+  font-weight: bold;
+  border-top: 1px solid var(--reduced-gray);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.podcast-card__artist {
+  border-bottom: 1px solid var(--reduced-gray);
+  padding-bottom: 16px;
+  font-weight: lighter;
+  color: #5c5656;
+}
+
+.podcast-card__summary {
+  text-align: left;
+  word-wrap: break-word;
+
+}

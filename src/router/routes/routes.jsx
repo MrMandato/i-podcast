@@ -8,7 +8,6 @@ export const homeRoute = {
   path: '/',
   element: <HomePage />,
   loader: homeLoader
-
 }
 
 const podcastRoute = {

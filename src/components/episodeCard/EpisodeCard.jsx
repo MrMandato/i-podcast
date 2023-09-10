@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
-
+import './episodeCard.css'
 export const EpisodeCard = ({ trackName, description, episodeUrl }) => {
   return (
-    <div className='episode-card'>
+    <div className='episode-card card'>
       <p className='episode-card__title'>{trackName}</p>
       <p className='episode-card___description'>{description}</p>
       <audio controls className='episode-card__audio'>
