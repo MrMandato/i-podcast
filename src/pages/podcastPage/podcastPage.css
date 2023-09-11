@@ -1,3 +1,10 @@
+.podcast-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 8rem;
+}
+
 @media (min-width: 585px) {
   .podcast-page {
     display: grid;

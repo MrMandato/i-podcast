@@ -1,5 +1,5 @@
 .podcast-card {
-  margin-left: 2rem;
+  margin: 0 auto;
 }
 
 .podcast-card__avatar {
@@ -27,5 +27,12 @@
 .podcast-card__summary {
   text-align: left;
   word-wrap: break-word;
+
+}
+
+@media (min-width:585px) {
+  .podcast-card {
+    margin-left: 2rem;
+  }
 
 }
