@@ -26,12 +26,12 @@ export const EpisodeItem = memo(({
 })
 
 EpisodeItem.propTypes = {
-  trackName: PropTypes.string.isRequired,
-  releaseDate: PropTypes.string.isRequired,
-  trackTimeMillis: PropTypes.number.isRequired,
-  description: PropTypes.string.isRequired,
-  episodeUrl: PropTypes.string.isRequired,
-  trackId: PropTypes.number.isRequired
+  trackName: PropTypes.string,
+  releaseDate: PropTypes.string,
+  trackTimeMillis: PropTypes.number,
+  description: PropTypes.string,
+  episodeUrl: PropTypes.string,
+  trackId: PropTypes.number
 }
 
 EpisodeItem.displayName = 'EpisodeItem'

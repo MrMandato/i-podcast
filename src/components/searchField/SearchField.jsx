@@ -28,7 +28,7 @@ export const SearchField = ({ label, placeholder, value, onChange }) => {
 }
 
 SearchField.propTypes = {
-  label: PropTypes.string,
+  label: PropTypes.number,
   placeholder: PropTypes.string,
   value: PropTypes.string,
   onChange: PropTypes.func

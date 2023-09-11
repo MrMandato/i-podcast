@@ -1,4 +1,4 @@
-import { useMemo, useEffect } from 'react'
+import { useMemo } from 'react'
 import { PodcastList } from '../../components/podcastList'
 import { SearchField } from '../../components/searchField'
 import { useInput } from '../../hooks/useInput'
