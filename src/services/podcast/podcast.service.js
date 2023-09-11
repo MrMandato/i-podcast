@@ -2,13 +2,15 @@ import { podcastListKey } from "../../constants/keys"
 import { getLocalStorage, isEmptyArray } from "../../utils/commons"
 
 export const getPodcasts = async () => {
-  const applePodcastURL = 'https://itunes.apple.com/us/rss/toppodcasts/limit=100/genre=1310/json'
+  const applePodcastURL = `https://api.allorigins.win/get?url=${window.encodeURIComponent('https://itunes.apple.com/us/rss/toppodcasts/limit=100/genre=1310/json')}`
 
   try {
-    const result = await fetch(applePodcastURL)
-    const response = await result.json()
-    const podcastElements = response.feed.entry
-    return podcastElements
+    const response = await fetch(applePodcastURL)
+    if (!response.ok) throw new Error('Network response was not ok.')
+
+    const result = await response.json()
+    const podcastElements = JSON.parse(result.contents)
+    return podcastElements.feed.entry
   } catch (error) {
     console.error('Error getting podcasts:', error)
     return []
@@ -16,13 +18,13 @@ export const getPodcasts = async () => {
 }
 
 export const getEpisodes = async (podcastId) => {
-  const podcastURL = `https://itunes.apple.com/lookup?id=${podcastId}&media=podcast&entity=podcastEpisode&limit=20`
+  const podcastURL = `https://api.allorigins.win/get?url=${window.encodeURIComponent(`https://itunes.apple.com/lookup?id=${podcastId}&media=podcast&entity=podcastEpisode&limit=20`)}`
 
   try {
     const result = await fetch(podcastURL)
     const response = await result.json()
-    const episodesElements = response.results.slice(1)
-    return episodesElements
+    const episodesElements = JSON.parse(response.contents)
+    return episodesElements.results.slice(1)
   } catch (error) {
     console.error('Error getting episodes:', error)
     return []
