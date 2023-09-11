@@ -19,6 +19,7 @@ export const PodcastList = ({ podcastElements = [] }) => {
         EmptyStateComponent={EmptyStateList}
         ItemComponent={PodcastItem}
         getId={getId}
+        emptyStateMessage='podcast not found'
       />
     </div>
   )

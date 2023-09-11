@@ -2,11 +2,23 @@
   display: flex;
   justify-content: end;
   align-items: baseline;
-  margin: 3rem;
   position: fixed;
-  right: 0;
   z-index: 1;
+  margin-top: 7rem;
+  right: .5rem;
+  margin-bottom: .5rem;
 }
+
+@media (min-width:585px) {
+  .search-field {
+    margin: 3rem;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    margin-top: 4.1rem;
+  }
+}
+
 
 .search-field__form__label {
   font-weight: bold;

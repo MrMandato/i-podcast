@@ -6,12 +6,13 @@ export const List = ({
   elements = [],
   ItemComponent,
   EmptyStateComponent,
+  emptyStateMessage,
   getId = generateId
 }) => {
   if (isEmptyArray(elements) || !ItemComponent) {
     return (
       <>
-        {EmptyStateComponent ? <EmptyStateComponent /> : <p>list is empty</p>}
+        {EmptyStateComponent ? <EmptyStateComponent emptyStateMessage={emptyStateMessage} /> : <p>list is empty</p>}
       </>
     )
   }
@@ -33,7 +34,8 @@ List.propTypes = {
   elements: PropTypes.array,
   ItemComponent: PropTypes.elementType,
   EmptyStateComponent: PropTypes.elementType,
-  getId: PropTypes.func
+  getId: PropTypes.func,
+  emptyStateMessage: PropTypes.string
 }
 
 

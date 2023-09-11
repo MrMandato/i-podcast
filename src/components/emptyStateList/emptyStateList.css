@@ -1,0 +1,7 @@
+.empty-state {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+  color: var(--amber);
+}
