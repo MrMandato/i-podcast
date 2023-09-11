@@ -27,6 +27,7 @@ export const podcastLoader = async ({ params }) => {
 
     const episodesInfo = await getEpisodes(params.podcastId)
     setLocalStorage(`PODCAST-DETAIL-${params.podcastId}`, dataWithTimestamp(episodesInfo))
+    return episodesInfo
 
   } catch (error) {
     console.error('Error in podcast loader:', error)
