@@ -32,18 +32,20 @@ export const PodcastItem = memo(({
 
 PodcastItem.propTypes = {
   'im:image': PropTypes.arrayOf(PropTypes.shape({
-    label: PropTypes.string.isRequired
-  })).isRequired,
+    label: PropTypes.string
+  })),
   'im:name': PropTypes.shape({
-    label: PropTypes.string.isRequired
-  }).isRequired,
+    label: PropTypes.string
+  }),
   'im:artist': PropTypes.shape({
-    label: PropTypes.string.isRequired
-  }).isRequired,
-  summary: PropTypes.string.isRequired,
+    label: PropTypes.string
+  }),
+  summary: PropTypes.shape({
+    label: PropTypes.string
+  }),
   id: PropTypes.shape({
     attributes: PropTypes.shape({
-      'im:id': PropTypes.string.isRequired
+      'im:id': PropTypes.string
     })
   })
 }
