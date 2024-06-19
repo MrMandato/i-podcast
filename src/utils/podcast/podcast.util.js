@@ -4,7 +4,7 @@ export const filterPodcast = (podcastElements, search) => {
   if (isEmptyArray(podcastElements)) return []
   return podcastElements
     .filter(({ 'im:name': { label: title }, 'im:artist': { label: artist } }) => (
-      title.toLowerCase().includes(search) || artist.includes(search)) /* TODO: fix el filtro  agregando toLowerCase()) */
+      title.toLowerCase().includes(search.toLowerCase()) || artist.includes(search.toLowerCase()))
     )
 }
 
